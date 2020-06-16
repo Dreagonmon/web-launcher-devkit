@@ -5113,7 +5113,7 @@ System.register(
   },
 );
 System.register(
-  "file:///D:/Code/Deno/WebLauncherDevKit/dev_server",
+  "file:///D:/Code/Deno/web-launcher-devkit/scripts/dev_server",
   [
     "https://deno.land/std@0.57.0/http/server",
     "https://deno.land/std@0.57.0/flags/mod",
@@ -5443,5 +5443,5 @@ System.register(
   },
 );
 
-__instantiate("file:///D:/Code/Deno/WebLauncherDevKit/dev_server");
+__instantiate("file:///D:/Code/Deno/web-launcher-devkit/scripts/dev_server");
 

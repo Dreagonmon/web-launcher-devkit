@@ -5114,7 +5114,7 @@ System.register(
 );
 // Copyright 2018-2020 the Deno authors. All rights reserved. MIT license.
 System.register(
-  "file:///D:/Code/Deno/WebLauncherDevKit/file_server",
+  "file:///D:/Code/Deno/web-launcher-devkit/scripts/file_server",
   [
     "https://deno.land/std@0.57.0/path/mod",
     "https://deno.land/std@0.57.0/http/server",
@@ -5473,7 +5473,7 @@ System.register(
 );
 
 const __exp = __instantiate(
-  "file:///D:/Code/Deno/WebLauncherDevKit/file_server",
+  "file:///D:/Code/Deno/web-launcher-devkit/scripts/file_server",
 );
 export const serveFile = __exp["serveFile"];
 
