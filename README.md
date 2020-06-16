@@ -22,7 +22,9 @@ deno run --allow-run --allow-read https://dreagonmon.github.io/web-launcher-devk
 
 ## visit example page
 
-Start dev server and file server.
+Clone master branch.
+
+Start dev server and file server at root directory.
 
 Then visit ```http://127.0.0.1:1080/examples/simple/index.html```
 
