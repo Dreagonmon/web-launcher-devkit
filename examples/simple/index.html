@@ -9,6 +9,7 @@
     "use strict";
     import { Launcher } from "../js/launcher.js";
     let api = new Launcher();
+    // api.startDebugSession(); // for debug
     function launch(img) {
       let packageName = img.getAttribute("data-package");
       let activity = img.getAttribute("data-activity");
