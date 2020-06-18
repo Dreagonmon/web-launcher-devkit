@@ -180,10 +180,10 @@ class Launcher {
     if (port < 0) {
       // try to get the port
       try {
-        const url = window.location.href;
-        const portText = getParameterByName(url, "port");
+        const re = /WebLauncher\/\d*? \(port (\d*?)\)/g;
+        const portText = re.exec(navigator.userAgent)[1];
         port = Number.parseInt(portText);
-        if (portText == null || port < 0) {
+        if (portText == null || port <= 0 || port > 65535) {
           port = 10801;
         }
       } catch {
