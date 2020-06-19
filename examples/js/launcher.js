@@ -166,14 +166,6 @@ class MockServer {
 }
 
 // launcher api
-const getParameterByName = (url, name) => {
-  name = name.replace(/[[\]]/g, "\\$&");
-  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
-  var results = regex.exec(url);
-  if (!results) return null;
-  if (!results[2]) return "";
-  return decodeURIComponent(results[2].replace(/\+/g, " "));
-};
 class Launcher {
   PERMISSION_LAUNCHER = "launcher";
   constructor (port = -1) {
@@ -258,7 +250,7 @@ class Launcher {
 };
 
 // export
-// window['Launcher'] = Launcher;
-// window['ApplicationInfo'] = ApplicationInfo;
-// window['LauncherResponseError'] = LauncherResponseError;
-export { Launcher, ApplicationInfo, LauncherResponseError };
+window['Launcher'] = Launcher;
+window['ApplicationInfo'] = ApplicationInfo;
+window['LauncherResponseError'] = LauncherResponseError;
+// export { Launcher, ApplicationInfo, LauncherResponseError };
