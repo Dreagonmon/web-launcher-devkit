@@ -1,6 +1,9 @@
 # web-launcher-devkit
 some [deno](https://deno.land/) scripts that can be used to develop Android Launcher
 
+# stop using this!
+# use [launcher.js](https://github.com/Dreagonmon/web-launcher)!
+
 ## start development server
 run dev server:
 
